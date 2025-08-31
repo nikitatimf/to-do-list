@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    background: #F5F5F5;
+}
+
+.container {
+    width: 100%;
+    max-width: 687px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+
+/* Title */
+.title {
+    margin: 75px 0 20px;
+}
+
+.main-title {
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg, 
+        #07FDFD 0% 35%,
+        #5756FF  50% 55%,
+        #CC00FF 60% 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Form */
+.form_place {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form_input {
+    width: 100%;
+    height: 57px;
+    border-radius: 15px 0 0 15px;
+    border: 0;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    position: relative;
+    outline: none;
+    font-size: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form_input::placeholder {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form_btn {
+    height: 57px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    border: 0;
+    background: linear-gradient(
+        to right top,
+        #07FDFD 0% 20%,
+        #5756FF  50% 55%,
+        #CC00FF 90% 100%
+
+    );
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+
+/* Progress */
+.progress_and_tasks {
+    margin-bottom: 100px;
+}
+
+.progress {
+    display: flex;
+    gap: 19px;
+}
+
+.progress_window {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.progress_title {
+    font-size: 16px;
+    transform: translateY(-1px);
+    margin-left: 16px;
+    background: linear-gradient(
+        to right top,
+        #07FDFD 0% 20%,
+        #5756FF  50% 55%,
+        #CC00FF 90% 100%
+
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Tasks */
+.task {
+    width: 100%;
+    height: 57px;
+    padding: 0 16px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_text {
+    font-size: 20px;
+    transform: translateY(-1px);
+    background-color: #FFFFFF;
+}
+
+
+/* Button */
+.buttons {
+    background-color: #FFFFFF;
+    height: 20px;
+}
+
+.button_delete,
+.button_correct,
+.button_ready {
+    border: 0;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    height: 20px;
+
+}
+
+.button_img{
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 500px) {
+    /* Title */
+    .main-title {
+        font-size: 30px;
+    } 
+
+
+    /* Form */
+    .form_place {
+        display: block;
+    }
+
+    .form_input {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .form_btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Progress */ 
+    .progress {
+        display: block;
+    }
+}
+
+@media (max-width: 300px) {
+    /* Form */
+    .form_input {
+        height: 40px;
+    }
+
+    .form_input::placeholder {
+        font-size: 15px;
+    }
+
+    .form_btn {
+        height: 30px;
+        font-size: 15px;
+    }
+
+
+    /* Progress */
+    .progress_title {
+        font-size: 15px;
+    }
+
+
+    /* Task */
+    .task_text {
+        font-size: 15px;
+    }
+
+
+    /* Button */
+    .button_img{
+        background-color: #FFFFFF;
+        width: 15px;
+        height: 15px;
+        padding: 0;
+    }
+
+    .button_delete,
+    .button_correct,
+    .button_ready {
+        padding: 3px; 
+    }
+    
+}
