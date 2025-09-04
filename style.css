@@ -76,6 +76,7 @@
     );
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
     padding: 0 20px;
+    -webkit-tap-highlight-color:transparent;
 }
 
 
@@ -127,10 +128,26 @@
     justify-content: space-between;
 }
 
+.task-short{
+    width: 90%;
+    margin-left: 10%;
+    
+}
+
 .task_text {
     font-size: 20px;
     transform: translateY(-1px);
     background-color: #FFFFFF;
+}
+
+.task_edit {
+    width: 50%;
+    height: 55px;
+    border: 0;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    font-family: initial;
+    outline: none;
 }
 
 
@@ -142,13 +159,17 @@
 
 .button_delete,
 .button_correct,
-.button_ready {
+.button_ready,
+.button_plus {
     border: 0;
     background-color: #FFFFFF;
     cursor: pointer;
     display: inline;
     align-items: center;
     height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-tap-highlight-color:transparent;
 
 }
 
